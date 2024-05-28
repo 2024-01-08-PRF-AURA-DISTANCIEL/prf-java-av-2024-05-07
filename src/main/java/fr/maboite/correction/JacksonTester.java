@@ -17,7 +17,15 @@ public class JacksonTester {
 			System.out.println("L'objet en JSON vaut : ");
 			System.out.println(jsonString);
 		} catch (JsonProcessingException e) {
-			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		MonRecord monRecord = new MonRecord(1, "Alcazar", "Juan");
+		try {
+			String jsonString2 = mapper.writeValueAsString(monRecord);
+			System.out.println("L'objet en JSON vaut : ");
+			System.out.println(jsonString2);
+		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
 
