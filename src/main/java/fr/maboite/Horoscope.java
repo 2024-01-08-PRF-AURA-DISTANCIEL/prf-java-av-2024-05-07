@@ -34,13 +34,14 @@ public class Horoscope {
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		System.out.println("Appuyer sur une touche pour démarrer la génération");
 		try (Scanner scanner = new Scanner(System.in)) {
 			scanner.nextLine();
 			LocalDate date = LocalDate.now();
 			Horoscope horoscope = new Horoscope();
 			while (true) {
+				Thread.sleep(10);
 				horoscope.generateHoroscope(date);
 				date = date.plusDays(1);
 			}

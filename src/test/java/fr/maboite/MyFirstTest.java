@@ -15,7 +15,7 @@ public class MyFirstTest {
 	}
 
 	@BeforeEach
-	public void beforeEach() {
+	public static void beforeEach() {
 		System.out.println("before each");
 	}
 
