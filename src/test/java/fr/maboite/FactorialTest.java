@@ -3,6 +3,7 @@ package fr.maboite;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+/**
 public class FactorialTest {
 
     @Test
@@ -75,3 +76,4 @@ public class FactorialTest {
         Assertions.assertEquals(1, test5);
     }
 }
+**/

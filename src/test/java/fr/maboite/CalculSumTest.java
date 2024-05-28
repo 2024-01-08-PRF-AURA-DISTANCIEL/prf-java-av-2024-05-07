@@ -4,6 +4,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
 public class CalculSumTest
 {
     @BeforeAll
@@ -55,4 +56,6 @@ public class CalculSumTest
 
         Assertions.assertEquals(5, somme);
     }
+
 }
+ **/

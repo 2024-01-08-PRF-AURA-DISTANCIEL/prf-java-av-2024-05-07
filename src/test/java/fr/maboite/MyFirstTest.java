@@ -26,10 +26,6 @@ public class MyFirstTest {
 		assertEquals(expectedValue, computedValue);
 	}
 
-	@Test
-	@Disabled
-	public void testFailure() {
-		//assertEquals(3, 2);
-	}
+
 
 }

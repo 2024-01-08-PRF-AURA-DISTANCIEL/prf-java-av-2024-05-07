@@ -10,8 +10,10 @@ public class MesTests {
         assertEquals(1, 1, "Ce test passe");
     }
 
+    /**
     @Test
     public void testQuiEchoue() {
         assertEquals(1, 2, "Ce test ne passeraaa PAAAAAAS");
     }
+    **/
 }

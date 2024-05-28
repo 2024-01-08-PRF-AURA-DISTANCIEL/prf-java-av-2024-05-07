@@ -129,7 +129,7 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.2.3</version>
+			<version>1.5.1</version>
 			<!-- Ici, prend la version supérieure ou égale à la 1.2.3 et 
 			strictement inférieure à la 2.0 -->
 			<!--version>[1.2.3,2.0)</version-->
@@ -177,6 +177,11 @@
 			<artifactId>derbyclient</artifactId>
 			<version>10.15.2.0</version>
 			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.13</version>
 		</dependency>
 	</dependencies>
 </project>
