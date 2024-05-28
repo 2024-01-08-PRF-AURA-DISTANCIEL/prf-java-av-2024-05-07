@@ -9,8 +9,9 @@ public class Chaine {
 	
 	
 	public int calcResultNumberInChaine(String strung) {
+		int resultFinal = 0;
 		for(int i =0; i<strung.length(); i++) {
-			isNumber(strung(i));
+			if(strung[i])
 		}
 	}
 	

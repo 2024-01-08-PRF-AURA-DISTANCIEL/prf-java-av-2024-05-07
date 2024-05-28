@@ -18,13 +18,12 @@
 		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
 			by default -->
 		<encoder>
-			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
-			</pattern>
+			<pattern>%date{ISO8601} [%thread] %-5level %logger{36} - %msg%n</pattern>
 		</encoder>
 	</appender>
 
-	<!-- Ici, on définit la configuration de base de tous les loggers --> 
-	<!-- Par défaut, tous les loggers n'écriront qu'au niveau info -->
+	 
+	<!-- Ici, on définit la configuration de base de tous les loggers --><!-- Par défaut, tous les loggers n'écriront qu'au niveau info -->
     <root level="info">
         <appender-ref ref="FILE" />
         <appender-ref ref="STDOUT" />
