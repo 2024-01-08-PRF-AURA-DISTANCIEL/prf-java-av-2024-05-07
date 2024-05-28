@@ -14,7 +14,7 @@
 		ses plugins -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<maven.compiler.release>17</maven.compiler.release>
+		<maven.compiler.release>11</maven.compiler.release>
 		<!-- JaCoCo Properties -->
 		<jacoco.version>0.8.6</jacoco.version>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
@@ -130,22 +130,13 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>1.2.3</version>
-			<!-- Ici, prend la version supérieure ou égale à la 1.2.3 et 
-			strictement inférieure à la 2.0 -->
-			<!--version>[1.2.3,2.0)</version-->
 		</dependency>
 		<!-- Cette dépendance est provided : nous en avons besoin pour la
 		compilation.
 			En effet, nous faisons parfois référence à la classe HttpServlet que cette
 		dépendance
 			contient.  
-		   Mais au final, ce sera Tomcat qui la fournira en tant que serveur.-->
-			 <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
-		<dependency>
-    	<groupId>com.fasterxml.jackson.core</groupId>
-    	<artifactId>jackson-databind</artifactId>
-    	<version>2.17.1</version>
-		</dependency>
+		    Mais au final, ce sera Tomcat qui la fournira en tant que serveur.-->
 		<dependency>
 			<groupId>jakarta.platform</groupId>
 			<artifactId>jakarta.jakartaee-api</artifactId>
@@ -158,7 +149,7 @@
 			<artifactId>jts-core</artifactId>
 			<version>1.18.2</version>
 		</dependency>
-		<!-- Jackson pour JSON -->
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
