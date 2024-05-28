@@ -6,12 +6,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class Main {
 
 	public static void main(String[] args) throws JsonProcessingException {
-		String[] seasons = {"Winter", "Spring", "Summer", "Autumn"};
-		PojoToJSON myPojo = new PojoToJSON("salut", "ça va ?", seasons); 
-		ObjectMapper mapper = new ObjectMapper(); 
-		String jsonString = mapper.writeValueAsString(myPojo);
-		System.out.println(jsonString);
-
+//		String[] seasons = {"Winter", "Spring", "Summer", "Autumn"};
+//		PojoToJSON myPojo = new PojoToJSON("salut", "ça va ?", seasons); 
+//		ObjectMapper mapper = new ObjectMapper(); 
+//		String jsonString = mapper.writeValueAsString(myPojo);
+//		System.out.println(jsonString);
+		
+		Factorial factorial=new Factorial();
+		factorial.compute(3);
 	}
 	
 //	J'ai lancé le main sans les scope test et scope compile cela fonctionne quand même parce que
