@@ -32,7 +32,5 @@
     
     <!-- les loggers dont le nom commence par fr.maboite écriront dès le niveau debug atteint -->
     <logger name="fr.maboite" level="trace" />
-    <!-- les loggers dont le nom commence par fr.maboite écriront dès le niveau debug atteint -->
-    <logger name="fr.maboite.logger.Looper" level="trace" />
 
 </configuration>

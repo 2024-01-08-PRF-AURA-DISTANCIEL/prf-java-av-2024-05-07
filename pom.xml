@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.entreprise</groupId>
 	<artifactId>prf-java-av</artifactId>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>Java avancé en PRF !</name>
 	<description>Un projet vraiment très très bien !</description>
@@ -85,6 +85,11 @@
 					<nexusUrl>http://localhost:8081/</nexusUrl>
 					<skipStaging>true</skipStaging>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.4.0</version>
 			</plugin>
 		</plugins>
 	</build>
