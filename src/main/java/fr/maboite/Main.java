@@ -13,7 +13,11 @@ public class Main {
 //		System.out.println(jsonString);
 		
 		Factorial factorial=new Factorial();
-		factorial.compute(3);
+		try {
+			factorial.compute(-12);
+		} catch (Exception e) {
+			System.out.println(e);
+		}
 	}
 	
 //	J'ai lancé le main sans les scope test et scope compile cela fonctionne quand même parce que

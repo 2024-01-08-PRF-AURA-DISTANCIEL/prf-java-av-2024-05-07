@@ -13,6 +13,7 @@ public class LoggerExample {
     public static void main(String[] args) throws TestException {
     	LOGGER.info("Démarrage du main");
     	Looper looper = new Looper();
+    	LOGGER.debug("Adresse de looper : {}", looper);
     	LOGGER.info("La somme vaut : {}", looper.loop(10));
     	LOGGER.info("Fin du main");
 		
