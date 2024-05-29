@@ -25,14 +25,14 @@
 
 	<!-- Ici, on définit la configuration de base de tous les loggers --> 
 	<!-- Par défaut, tous les loggers n'écriront qu'au niveau info -->
-    <root level="info">
+    <root level="error">
         <appender-ref ref="FILE" />
         <appender-ref ref="STDOUT" />
     </root>
     
     <!-- les loggers dont le nom commence par fr.maboite écriront dès le niveau debug atteint -->
-    <logger name="fr.maboite" level="trace" />
+    <logger name="fr.maboite" level="error" />
     <!-- les loggers dont le nom commence par fr.maboite écriront dès le niveau debug atteint -->
-    <logger name="fr.maboite.logger.Looper" level="trace" />
+    <logger name="fr.maboite.logger.Looper" level="debug" />
 
 </configuration>

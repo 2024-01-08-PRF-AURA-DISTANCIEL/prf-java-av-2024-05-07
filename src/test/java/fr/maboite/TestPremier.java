@@ -41,14 +41,14 @@ public class TestPremier {
 			int nbre = 5;
 	        Assertions.assertEquals (5,5);
 	        
-	        System.out.println("le test est reussi");
+	        System.out.println("le test a reussi");
 	    }
 	   
 	  @Test
 	   public void testFails() {
 	    	int nbre = 3;
 	    	Assertions.assertEquals(3,1);
-	       System.out.println("le test est echoué");
+	       System.out.println("le test a echoué");
 	        
 	    }
 		
