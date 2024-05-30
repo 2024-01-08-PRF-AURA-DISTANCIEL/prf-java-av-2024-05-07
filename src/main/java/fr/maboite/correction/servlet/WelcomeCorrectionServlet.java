@@ -9,8 +9,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "Welcome", displayName = "Welcome Servlet", urlPatterns = "/correction/welcome", loadOnStartup = 1)
-public class WelcomeServlet extends HttpServlet {
+@WebServlet(name = "WelcomeCorrection", displayName = "Welcome Servlet", urlPatterns = "/correction/welcome", loadOnStartup = 1)
+public class WelcomeCorrectionServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
