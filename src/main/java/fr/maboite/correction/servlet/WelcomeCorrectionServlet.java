@@ -9,8 +9,13 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+<<<<<<< HEAD:src/main/java/fr/maboite/correction/servlet/WelcomeServlet.java
 @WebServlet(name = "Welcome2", displayName = "Welcome Servlet", urlPatterns = "/correction/welcome", loadOnStartup = 1)
 public class WelcomeServlet extends HttpServlet {
+=======
+@WebServlet(name = "WelcomeCorrection", displayName = "Welcome Servlet", urlPatterns = "/correction/welcome", loadOnStartup = 1)
+public class WelcomeCorrectionServlet extends HttpServlet {
+>>>>>>> main:src/main/java/fr/maboite/correction/servlet/WelcomeCorrectionServlet.java
 
 	private static final long serialVersionUID = 1L;
 
