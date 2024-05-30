@@ -21,6 +21,8 @@ public class WelcomeServlet extends HttpServlet {
 
         response.setContentType("text/html");
         response.setBufferSize(8192);
+       
+     
         try (PrintWriter out = response.getWriter()) {
             out.println("<html>"
                     + "<head><title>Générée par une servlet</title></head>");
@@ -31,6 +33,19 @@ public class WelcomeServlet extends HttpServlet {
             if (username != null && username.length() > 0) {
                 out.println("Vous êtes : "+ username);
             }
+            
+            String password = request.getParameter("password");
+            if (password != null && password.length() > 0) {
+                out.println("Vtre mot de passe est  : "+ password);
+            }
+            
+            PanierAchat monPanier = (PanierAchat) request.getSession().getAttribute("monPanier");
+            monPanier.ajouteProduit();
+            out.println("<br/> le panier d'achat contient :" + monPanier.getNombreProduits());
+            
+            String headerAcceptEncoding = request.getHeader("Accept-Encoding");
+            out.println("<br/> le header Accept-Encoding : " + headerAcceptEncoding);
+            
             out.println("</body></html>");
         }
     }

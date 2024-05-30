@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "Welcome", displayName = "Welcome Servlet", urlPatterns = "/correction/welcome", loadOnStartup = 1)
+@WebServlet(name = "Welcome2", displayName = "Welcome Servlet", urlPatterns = "/correction/welcome", loadOnStartup = 1)
 public class WelcomeServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -27,6 +27,7 @@ public class WelcomeServlet extends HttpServlet {
 		response.setBufferSize(8192);
 		response.setHeader("Language", "Klingon");
 		response.setHeader("Mon-Header", "Truc");
+		
 		try (PrintWriter out = response.getWriter()) {
 			out.println("<html>"
 					+ "<head><title>Générée par une servlet</title></head>");
